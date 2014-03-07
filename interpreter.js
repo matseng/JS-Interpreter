@@ -1169,6 +1169,8 @@ Interpreter.prototype.deleteProperty = function(obj, name) {
 Interpreter.prototype.getScope = function() {
   for (var i = 0; i < this.stateStack.length; i++) {
     if (this.stateStack[i].scope) {
+     // if(this.stateStack[i].scope)
+     //   console.log(this.stateStack[i].scope.properties);
       return this.stateStack[i].scope;
     }
   }

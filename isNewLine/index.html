@@ -1,0 +1,25 @@
+<!-- index.html -->
+
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <textarea id="code">
+  function test0(){
+    var x = 1;
+    return function test(){
+      var y = 2;
+      return function test2(){
+        var z = 3; 
+        return function test3(){
+          return x;
+        };
+      };
+    };
+  };
+  test0()()()();
+</textarea>
+<script type="text/javascript" src='isNewLine.js'></script>
+</body>
+</html>
