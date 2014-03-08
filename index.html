@@ -43,7 +43,7 @@
   click <em>Step</em> repeatedly, or click <em>Run</em> once.
   Open your browser's console for errors.</p>
   <p>
-<!--   <textarea id="code">
+<textarea id="code">
     var result = [];
     function fibonacci(n, output) {
       var a = 1, b = 1, sum;
@@ -56,9 +56,22 @@
     }
     fibonacci(4, result);
     alert(result.join(', '));
+</textarea>
+
+<!-- <textarea id="code">
+  var a = 'hello ';
+
+  var b = 'world';
+
+  var sayHello = function(){
+    var c = a + b;
+    alert(c);
+  }
+
+  sayHello();
 </textarea> -->
 
-<textarea id="code">
+<!-- <textarea id="code">
   function test0(){
     var x = 1;
     return function test(){
@@ -72,13 +85,12 @@
     };
   };
   test0()()()();
-</textarea>
-
-
+</textarea> -->
 
 <br>
   <button onclick="parseButton()">Parse</button>
   <button onclick="stepButton()" id="stepButton" disabled="disabled">Step</button>
+  <button onclick="biggerStepButton()" id="biggerStepButton" disabled="disabled">Bigger Step</button>
   <button onclick="runButton()" id="runButton" disabled="disabled">Run</button>
   </p>
 

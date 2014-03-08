@@ -32,6 +32,7 @@ var isNewLine = function(str, start, end){
 }
 
 console.log(text);
+console.log(text.match(/\r|\n/g).length);
 var subStr = text.substring(start, end);
 console.log(subStr);
 console.log(isNewLine(text, start, text.length));
